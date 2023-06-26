@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Student from "./Student";
+import Hello from "./Hello";
 function App(){
   const[name,setName]=useState("");
   console.log(".....nsmr",name);
@@ -19,6 +20,7 @@ function App(){
                       <option>Marvel</option>
                       <option>DC</option>
                </select><br></br><br></br>
+               <Hello />
                <input type="checkbox"  onChange={(e)=>setInterest(e.target.checked)}></input><spam>Accept terms and conditions</spam><br></br><br></br>
                <button type="submit">Submit</button>
          </form>
